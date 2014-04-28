@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textName"
+        android:columnCount="8" >
+
+        <TextView
+            android:id="@+id/textWins"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:text="Wins"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textNumWins"
+            android:layout_column="1"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:text="7"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textDraws"
+            android:layout_column="2"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:text="Draws"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textNumDraws"
+            android:layout_column="3"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textLosses"
+            android:layout_column="4"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:text="Losses"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textNumLosses"
+            android:layout_column="5"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:text="6"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textAggregateScore"
+            android:layout_column="6"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:text="Score"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textScore"
+            android:layout_column="7"
+            android:layout_gravity="left|top"
+            android:layout_row="0"
+            android:text="1"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </GridLayout>
+
+</RelativeLayout>
